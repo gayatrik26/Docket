@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Indie Flower', cursive;
+    background: url(./imgs/todolist-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    margin: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+.header:hover{
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+}
+.logo{
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: #D3B1C2;
+}
+.search-bar{
+    margin-right: 30px;
+}
+.search-bar input{
+    border: none;
+    width: 60%;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    font-family: 'Indie Flower', cursive;
+    padding: 18px;
+    outline: none;
+    border-radius: 55px;
+    background-color:rgba(211, 177, 194,0.5);
+}
+.logo:hover{
+    cursor: pointer;
+    transform: translatey(1px);
+}
+.btn{
+    width: 30%;
+    height: 2.2rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 55px;
+    color: #D3B1C2;
+}
+.search-bar input:hover{
+    cursor: pointer;
+    transform: translatey(1px);
+    background-color:rgba(211, 177, 194,0.3);
+}
+.btn:hover{
+    cursor: pointer;
+    transform: translateY(1px);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+    background-color: #fff;
+    margin-top: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.container h2{
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(211, 177, 194,0.8);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-task{
+    height: 3rem;
+    width: 25rem;
+    font-size: 1.2rem;
+    margin-left: 64px;
+    font-family: 'Indie Flower', cursive;
+    padding: 25px;
+    border-radius: 60px;
+    outline: none;
+    border: none;
+    background-color: rgba(0,0,0,0.1);
+}
+.btn2{
+    height: 3rem;
+    width: 5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    font-family: 'Indie Flower', cursive;
+    background-color:rgba(211, 177, 194,0.5);
+}
+.btn2:hover{
+    cursor: pointer;
+    transform: translateY(2px);
+}
+.btn2:active{
+    background-color:rgba(211, 177, 194,0.3);
+}
+.input-task:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+li{
+    list-style: none;
+    margin-left: 125px;
+    margin-top: 2px;
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.list-container ul li {
+    list-style: none;
+    margin-left: 125px;
+    margin-top: 2px;
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+/* li:first-child{
+    margin-top: 10px;
+} */
+li::before{
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url(./imgs/circle.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: -15px;
+    margin-left: -14px;
+}
+li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+li.checked::before{
+    background-image: url(./imgs/checked.png);
+}
+li span{
+    position: absolute;
+    right: 90px;
+    top: 5px;
+    height: 35px;
+    width: 35px;
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+    color: #555;
+    line-height: 40px;
+    vertical-align: middle;
+    /* border-radius: 50%; */
+    padding-bottom: 40px;
+}
+li span:hover{
+    background-color: #edeef0;
+}
+.formm{
+    margin-bottom: 5px;
+    padding: 5px;
+}
+/* .error{
+    display: none;
+} */
