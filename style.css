@@ -186,6 +186,100 @@ li span:hover{
     margin-bottom: 5px;
     padding: 5px;
 }
-/* .error{
-    display: none;
-} */
+
+/* media queries */
+
+@media (max-width : 1164px) {
+    .container{
+        width: 70%;
+    }
+}
+@media (max-width : 840px) {
+    .container{
+        width: 80%;
+    }
+}
+@media (max-width : 735px) {
+    .container{
+        width: 85%;
+    }
+}
+@media (max-width : 684px) {
+    .container{
+        width: 95%;
+    }
+}
+@media (max-width : 615px) {
+    .container{
+        width: 100%;
+    }
+    .Seacrhinput ,.btn{
+        display: none;
+    }
+}
+@media (max-width : 588px) {
+    .container{
+        width: 95%;
+    }
+    .Seacrhinput{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .input-task{
+        margin-left: 2px;
+    }
+}
+@media (max-width : 546px) {
+    .container{
+        width: 97%;
+    }
+    .Seacrhinput ,.btn{
+        display: none;
+    }
+    .input-task{
+        width: 15rem;
+    }
+}
+@media (max-width : 365px) {
+    .container{
+        width: 97%;
+    }
+    .Seacrhinput ,.btn{
+        display: none;
+    }
+    .input-task{
+        width: 13rem;
+    }
+}
+@media (max-width : 285px) {
+    .container{
+        width: 97%;
+    }
+    .Seacrhinput ,.btn{
+        display: none;
+    }
+    .input-task{
+        width: 10rem;
+    }
+    .btn2{
+        font-size: 0.9rem;
+        width: 3rem;
+    }
+}
+@media (min-width : 285px) and (max-width : 365px) {
+    .container{
+        width: 97%;
+    }
+    .Seacrhinput ,.btn{
+        display: none;
+    }
+    .input-task{
+        width: 10rem;
+    }
+    .btn2{
+        font-size: 0.9rem;
+        width: 3rem;
+    }
+}
